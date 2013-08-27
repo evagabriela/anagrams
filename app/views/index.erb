@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Welcome to Anagrams!</h1>
+  <h2><%= @word %></h2>
+  <% @anagrams.each do |w| %>
+  <p><%= w %></p>
+  <% end %>
+
+  <form action="/anagram" method="post">
+    Type a word:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Anagrams!">
+  </form>
+</div>
+
+
+
