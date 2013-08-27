@@ -6,11 +6,14 @@ get '/:word' do
 end
 
 post '/anagram' do
-  @word = params[:user_input]
-  # "Show a list of anagrams for \"#{params[:word]}\""
-  @anagrams = Word.anagrams(@word)
- erb :index
+ #  @word = params[:user_input]
+ #  # "Show a list of anagrams for \"#{params[:word]}\""
+ #  @anagrams = Word.anagrams(@word)
+ # erb :index
+ redirect to "/#{params[:user_input]}"
 end
+
+#Controller
 
 
 

@@ -12,3 +12,5 @@ class Word < ActiveRecord::Base
   end
 
 end
+
+#Model 
